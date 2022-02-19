@@ -25,8 +25,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "mongodb" %}
-                        <li><a href="/categories/mongodb" class="">mongoDB ({{category[1].size}})</a></li>
+                    {% if category[0] == "mongo" %}
+                        <li><a href="/categories/mongo" class="">mongoDB ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
