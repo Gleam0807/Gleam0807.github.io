@@ -58,7 +58,6 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : true
 search                   : true
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -94,10 +93,10 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : 
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
@@ -105,7 +104,7 @@ author:
   name             : "Gleam0807👨‍💻"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "들은 것은 잊어버리고, 본 것은 기억하고 직접 해본 것은 이해한다."
-  location         : "Space"
+  #location         : "Space"
   email            :
   links:
     - label: "Email"
@@ -216,7 +215,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 10 # amount of posts to show
+paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -255,16 +254,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+# jekyll-archives:
+#  enabled:
+#    - categories
+#    - tags
+#  layouts:
+#    category: archive-taxonomy
+#    tag: archive-taxonomy
+#  permalinks:
+#    category: /categories/:name/
+#    tag: /tags/:name/
 
 
 # HTML Compression
