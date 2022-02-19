@@ -19,14 +19,14 @@
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
                     {% if category[0] == "JavaScript" %}
-                        <li><a href="/categories/JavaScript" class="">JavaScript ({{category[1].size}})</a></li>
+                        <li><a href="/categories/#JavaScript" class="">JavaScript ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "mongoDB" %}
-                        <li><a href="/categories/mongoDB" class="">mongoDB ({{category[1].size}})</a></li>
+                        <li><a href="/categories/#mongoDB" class="">mongoDB ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -34,14 +34,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "data" %}
-                        <li><a href="/categories/data" class="">정보 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/#data" class="">정보 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Programmers" %}
-                        <li><a href="/categories/programmers" class="">프로그래머스 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/#programmers" class="">프로그래머스 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
