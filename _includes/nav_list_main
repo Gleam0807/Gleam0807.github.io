@@ -25,6 +25,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "spring" %}
+                        <li><a href="/categories/spring" class="">Spring ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "db" %}
                         <li><a href="/categories/db" class="">DB ({{category[1].size}})</a></li>
                     {% endif %}
